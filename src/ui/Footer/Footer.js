@@ -13,6 +13,7 @@ const StyledFooter = styled.footer`
 
 const FooterListsContainer = styled.div`
   display: flex;
+  margin: 20px 0 20px 0;
 `;
 
 export default function Footer() {

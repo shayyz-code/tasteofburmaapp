@@ -7,7 +7,9 @@ const Div = styled.div`
   flex-flow: column;
   align-items: center;
 `;
-const Ul = styled.ul``;
+const Ul = styled.ul`
+  margin: 20px 0 20px 0;
+`;
 
 export default function CardMenu({ docs }) {
   console.log(docs);

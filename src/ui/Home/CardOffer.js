@@ -3,20 +3,33 @@ import Link from "next/link";
 import styled from "styled-components";
 import theme from "../theme";
 import PrimaryButton from "../PrimaryButton";
+import H2 from "../H2";
 
 const Div = styled.div`
   display: flex;
+  align-items: center;
+  justify-content: center;
 
-  div {
+  .subdiv {
     width: 50%;
+    max-width: 400px;
+    padding: 10px;
+
+    span {
+      color: ${theme.color.primary};
+    }
+
+    p {
+      margin: 40px 0 40px 0;
+    }
   }
 `;
 
 export default function CardOffer({ pictureLeft, spanText }) {
   const Article = () => (
-    <div>
+    <div className={"subdiv"}>
       {spanText && <span>{spanText}</span>}
-      <h2>Pure exotic taste</h2>
+      <H2>Pure exotic taste</H2>
       <p>
         Aute occaecat do irure ea pariatur quis amet esse. Ipsum pariatur tempor
         ea esse nostrud magna consequat dolor commodo voluptate exercitation
@@ -31,7 +44,7 @@ export default function CardOffer({ pictureLeft, spanText }) {
   );
 
   const Picture = () => (
-    <div>
+    <div className={"subdiv"}>
       <Image src={""} alt="picture of menu" style={{ width: "100%" }} />
     </div>
   );

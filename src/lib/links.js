@@ -1,11 +1,11 @@
 const links = [
   {
     path: "/",
-    name: "Home",
+    linkname: "Home",
   },
   {
     path: "/menu",
-    name: "Menu",
+    linkname: "Menu",
   },
 ];
 

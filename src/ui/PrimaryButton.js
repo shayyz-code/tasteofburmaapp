@@ -4,6 +4,8 @@ import theme from "./theme";
 
 const Div = styled.div`
   a {
+    padding: 5px 15px 5px 15px;
+    border-radius: 20px;
     background: ${theme.color.primary};
   }
 `;

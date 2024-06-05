@@ -3,14 +3,16 @@ import styled from "styled-components";
 
 const Item = styled.div`
   position: relative;
-
+  img {
+    border-radius: 10px;
+  }
   div {
     display: flex;
     justify-content: space-between;
     position: absolute;
-    bottom: 0;
-    right: 0;
-    width: 100%;
+    bottom: 10px;
+    right: 10px;
+    width: 90%;
   }
 `;
 

@@ -10,12 +10,15 @@ const Div = styled.div`
 `;
 const Ul = styled.ul`
   list-style: none;
+  margin: 0 0 40px 0;
 `;
 
 export default function CardPreviewMenu() {
   return (
     <Div>
-      <H3>Explore our exclusive dishes</H3>
+      <H3>
+        Explore our <span>exclusive</span> dishes
+      </H3>
       <Ul>
         <CardMenuItem
           src={""}

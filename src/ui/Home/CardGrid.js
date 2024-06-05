@@ -7,6 +7,7 @@ const Grid = styled.div`
   grid-template-rows: repeat(4, 1fr);
   grid-column-gap: 5px;
   grid-row-gap: 5px;
+  margin: 0 0 40px 0;
 
   .div1 {
     grid-area: 1 / 1 / 3 / 4;

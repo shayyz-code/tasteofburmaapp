@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Galada&family=Kanit&family=Libre+Barcode+128+Text&family=Rochester&display=swap");
+
 :root {
   --max-width: 1100px;
   --border-radius: 12px;
@@ -5,6 +7,8 @@
     "Roboto Mono", "Oxygen Mono", "Ubuntu Monospace", "Source Code Pro",
     "Fira Mono", "Droid Sans Mono", "Courier New", monospace;
 
+  --h1-rgb: 200, 182, 153;
+  --h2-rgb: 183, 176, 157;
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
@@ -42,6 +46,8 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
+    --h1-rgb: 210, 192, 163;
+    --h2-rgb: 243, 236, 217;
     --foreground-rgb: 255, 255, 255;
     --background-start-rgb: 0, 0, 0;
     --background-end-rgb: 0, 0, 0;
@@ -74,6 +80,9 @@
 }
 
 * {
+  font-family: "Kanit", sans-serif;
+  font-weight: 400;
+  font-style: normal;
   box-sizing: border-box;
   padding: 0;
   margin: 0;
@@ -93,6 +102,15 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
+}
+
+h1,
+.activeLink {
+  color: rgb(var(--h1-rgb));
+}
+
+h2 {
+  color: rgb(var(--h2-rgb));
 }
 
 a {
