@@ -26,9 +26,18 @@ const Div = styled.div`
   }
 
   .picturediv {
+    position: relative;
     padding: 0;
 
-    img {
+    .imgright {
+      position: absolute;
+      left: 0;
+      border-radius: 50%;
+    }
+
+    .imgleft {
+      position: absolute;
+      right: 0;
       border-radius: 50%;
     }
   }
@@ -42,8 +51,7 @@ export default function CardOffer({ pictureLeft, spanText }) {
       <p>
         Aute occaecat do irure ea pariatur quis amet esse. Ipsum pariatur tempor
         ea esse nostrud magna consequat dolor commodo voluptate exercitation
-        sunt tempor cillum. Duis proident excepteur exercitation in pariatur
-        excepteur nulla veniam commodo laboris et ullamco labore adipisicing.
+        sunt tempor cillum.
       </p>
       <PrimaryButton path={"/menu"}>Explore Menu</PrimaryButton>
     </div>
@@ -51,7 +59,12 @@ export default function CardOffer({ pictureLeft, spanText }) {
 
   const Picture = () => (
     <div className={"subdiv picturediv"}>
-      <Image src={dish1} alt="picture of menu" width={400} />
+      <Image
+        className={pictureLeft ? "imgleft" : "imgright"}
+        src={dish1}
+        alt="picture of menu"
+        width={400}
+      />
     </div>
   );
 
