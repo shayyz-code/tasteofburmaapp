@@ -32,12 +32,16 @@ const Div = styled.div`
     .imgright {
       position: absolute;
       left: 0;
+      top: 50%;
+      transform: translateY(-50%);
       border-radius: 50%;
     }
 
     .imgleft {
       position: absolute;
       right: 0;
+      top: 50%;
+      transform: translateY(-50%);
       border-radius: 50%;
     }
   }
