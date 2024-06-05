@@ -17,7 +17,7 @@ export default function FooterHeader() {
   return (
     <Div>
       <H1 isFooter={true} />
-      <p>Our restaurent is ....</p>
+      <p>Our restaurant is ....</p>
     </Div>
   );
 }

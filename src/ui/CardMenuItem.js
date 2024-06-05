@@ -5,6 +5,10 @@ import theme from "./theme";
 
 const Li = styled.li`
   display: flex;
+  transition: 0.3s;
+  background: rgba(100, 100, 100, 0);
+  border-radius: 15px;
+  cursor: pointer;
 
   div {
     margin: 0 20px 0 20px;
@@ -17,6 +21,10 @@ const Li = styled.li`
       color: ${theme.color.textMenuDescription};
       font-size: ${theme.fontsize.menuDescription};
     }
+  }
+
+  &:hover {
+    background: rgba(120, 120, 120, 0.2);
   }
 `;
 

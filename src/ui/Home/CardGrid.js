@@ -1,6 +1,8 @@
 import styled from "styled-components";
 import CardGridItem from "./CardGridItem";
 
+import dish2 from "$/dish2.jpeg";
+
 const Grid = styled.div`
   display: grid;
   grid-template-columns: repeat(6, 1fr);
@@ -8,6 +10,7 @@ const Grid = styled.div`
   grid-column-gap: 5px;
   grid-row-gap: 5px;
   margin: 0 0 40px 0;
+  max-width: 400px;
 
   .div1 {
     grid-area: 1 / 1 / 3 / 4;
@@ -29,11 +32,11 @@ const Grid = styled.div`
 export default function CardGrid() {
   return (
     <Grid>
-      <CardGridItem className="div1" src={""} name="Burger" price={10} />
-      <CardGridItem className="div2" src={""} name="Burger" price={10} />
-      <CardGridItem className="div3" src={""} name="Burger" price={10} />
-      <CardGridItem className="div4" src={""} name="Burger" price={10} />
-      <CardGridItem className="div5" src={""} name="Burger" price={10} />
+      <CardGridItem className="div1" src={dish2} name="Burger" price={10} />
+      <CardGridItem className="div2" src={dish2} name="Burger" price={10} />
+      <CardGridItem className="div3" src={dish2} name="Burger" price={10} />
+      <CardGridItem className="div4" src={dish2} name="Burger" price={10} />
+      <CardGridItem className="div5" src={dish2} name="Burger" price={10} />
     </Grid>
   );
 }

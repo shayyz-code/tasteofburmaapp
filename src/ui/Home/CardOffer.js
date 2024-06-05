@@ -1,9 +1,10 @@
 import Image from "next/image";
-import Link from "next/link";
 import styled from "styled-components";
 import theme from "../theme";
 import PrimaryButton from "../PrimaryButton";
 import H2 from "../H2";
+
+import dish1 from "$/dish1.jpeg";
 
 const Div = styled.div`
   display: flex;
@@ -13,7 +14,7 @@ const Div = styled.div`
   .subdiv {
     width: 50%;
     max-width: 400px;
-    padding: 10px;
+    padding: 40px;
 
     span {
       color: ${theme.color.primary};
@@ -21,6 +22,14 @@ const Div = styled.div`
 
     p {
       margin: 40px 0 40px 0;
+    }
+  }
+
+  .picturediv {
+    padding: 0;
+
+    img {
+      border-radius: 50%;
     }
   }
 `;
@@ -35,17 +44,14 @@ export default function CardOffer({ pictureLeft, spanText }) {
         ea esse nostrud magna consequat dolor commodo voluptate exercitation
         sunt tempor cillum. Duis proident excepteur exercitation in pariatur
         excepteur nulla veniam commodo laboris et ullamco labore adipisicing.
-        Incididunt quis pariatur aute anim aute aute. Sit qui commodo Lorem et
-        Lorem velit velit nulla adipisicing enim officia aute irure. Officia ex
-        ipsum ad eu culpa.
       </p>
       <PrimaryButton path={"/menu"}>Explore Menu</PrimaryButton>
     </div>
   );
 
   const Picture = () => (
-    <div className={"subdiv"}>
-      <Image src={""} alt="picture of menu" style={{ width: "100%" }} />
+    <div className={"subdiv picturediv"}>
+      <Image src={dish1} alt="picture of menu" width={400} />
     </div>
   );
 

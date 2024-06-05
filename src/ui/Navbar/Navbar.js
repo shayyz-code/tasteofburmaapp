@@ -7,7 +7,8 @@ import Header from "./Header";
 const Nav = styled.nav`
   display: flex;
   justify-content: space-between;
-  padding: 10px;
+  align-items: center;
+  padding: 10px 10px 10px 20px;
 `;
 
 export default function Navbar() {

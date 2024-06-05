@@ -2,6 +2,7 @@ import styled from "styled-components";
 import CardMenuItem from "../CardMenuItem";
 import PrimaryButton from "../PrimaryButton";
 import H3 from "../H3";
+import dish3 from "$/dish3.jpeg";
 
 const Div = styled.div`
   display: flex;
@@ -21,19 +22,19 @@ export default function CardPreviewMenu() {
       </H3>
       <Ul>
         <CardMenuItem
-          src={""}
+          src={dish3}
           name="Spicy Currey"
           description="noodles with chilli"
           price={20}
         />
         <CardMenuItem
-          src={""}
+          src={dish3}
           name="Spicy Currey"
           description="noodles with chilli"
           price={20}
         />
         <CardMenuItem
-          src={""}
+          src={dish3}
           name="Spicy Currey"
           description="noodles with chilli"
           price={20}
