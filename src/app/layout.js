@@ -9,9 +9,10 @@ import bgLightmode from "$/bg-lightmode.jpeg";
 
 export const metadata = {
   title: { template: "%s | Taste of Burma", default: "Taste of Burma" },
-  description: "San Fran's Burmese Restaurent",
+  description: "San Fran's Burmese Restaurant",
   icons: {
-    icon: "/icon.png",
+    icon: [{ url: "/icon.png" }],
+    apple: [{ url: "/apple-touch-icon.png" }],
   },
   generator: "Next.js",
   applicationName: "Taste of Burma",
@@ -26,13 +27,47 @@ export const metadata = {
     telephone: false,
   },
   metadataBase: new URL("https://tasteofburma.org"),
+
+  robots: {
+    index: false,
+    follow: true,
+    nocache: true,
+    googleBot: {
+      index: true,
+      follow: false,
+      noimageindex: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
+
   openGraph: {
     title: "Taste of Burma",
-    description: "San Fran's Burmese Restaurent",
+    description: "San Fran's Burmese Restaurant",
     url: "https://tasteofburma.org",
     siteName: "Taste of Burma",
+    images: [
+      {
+        url: "https://firebasestorage.googleapis.com/v0/b/tasteofburma-4e93e.appspot.com/o/opengraph-image.png?alt=media&token=824d509f-d8c7-4bea-87ab-d91067689e4c",
+        width: 1200,
+        height: 627,
+        alt: "Taste of Burma Logo",
+      },
+    ],
     locale: "en_US",
     type: "website",
+  },
+
+  twitter: {
+    card: "summary_large_image",
+    title: "Taste of Burma",
+    description: "San Fran's Burmese Restaurant",
+    creator: "@garrixon",
+    images: {
+      url: "https://firebasestorage.googleapis.com/v0/b/tasteofburma-4e93e.appspot.com/o/opengraph-image.png?alt=media&token=824d509f-d8c7-4bea-87ab-d91067689e4c",
+      alt: "Taste of Burma Logo",
+    },
   },
 };
 
