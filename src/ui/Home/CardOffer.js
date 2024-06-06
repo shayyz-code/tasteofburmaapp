@@ -6,6 +6,8 @@ import theme from "../theme";
 import PrimaryButton from "../PrimaryButton";
 import H2 from "../H2";
 
+import dish1 from "$/dish1.jpeg";
+
 const Div = styled.div`
   display: flex;
   align-items: center;
