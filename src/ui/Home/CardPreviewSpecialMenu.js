@@ -1,3 +1,5 @@
+"use client";
+
 import styled from "styled-components";
 import H3 from "../H3";
 import CardGrid from "./CardGrid";
@@ -9,13 +11,13 @@ const Div = styled.div`
   align-items: center;
 `;
 
-export default function CardPreviewSpecialMenu() {
+export default function CardPreviewSpecialMenu({ docs }) {
   return (
     <Div>
       <H3>
         Today&apos;s <span>special</span> deals
       </H3>
-      <CardGrid />
+      <CardGrid docs={docs} />
       <PrimaryButton path={"/menu"}>Explore more</PrimaryButton>
     </Div>
   );

@@ -7,6 +7,7 @@
     "Roboto Mono", "Oxygen Mono", "Ubuntu Monospace", "Source Code Pro",
     "Fira Mono", "Droid Sans Mono", "Courier New", monospace;
 
+  --primary-rgb: 235, 127, 6;
   --h1-rgb: 200, 182, 153;
   --h2-rgb: 183, 176, 157;
   --foreground-rgb: 0, 0, 0;
@@ -107,10 +108,15 @@ body {
 h1,
 .activeLink {
   color: rgb(var(--h1-rgb));
+  border-bottom: 2px solid rgb(var(--primary-rgb));
 }
 
 h2 {
   color: rgb(var(--h2-rgb));
+}
+
+img {
+  z-index: -1;
 }
 
 a {

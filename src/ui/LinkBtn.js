@@ -18,7 +18,7 @@ export default function LinkBtn({ path, linkname }) {
   const currentPath = usePathname();
   return (
     <Li>
-      <Link href={path} className={currentPath === path && "activeLink"}>
+      <Link href={path} className={currentPath === path ? "activeLink" : null}>
         {linkname}
       </Link>
     </Li>

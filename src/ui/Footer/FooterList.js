@@ -5,6 +5,10 @@ import LinkBtn from "../LinkBtn";
 const Ul = styled.ul`
   list-style: none;
   margin: 0 20px 0 20px;
+
+  li {
+    margin: 10px 0 0 0;
+  }
 `;
 
 export default function FooterList({ isLink, list }) {

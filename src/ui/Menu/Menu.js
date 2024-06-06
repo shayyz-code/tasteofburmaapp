@@ -6,7 +6,14 @@ import H3 from "../H3";
 export default async function Menu() {
   const res = await firebaseGetMenu();
   return (
-    <div style={{ display: "flex", flexFlow: "column", alignItems: "center" }}>
+    <div
+      style={{
+        display: "flex",
+        flexFlow: "column",
+        alignItems: "center",
+        margin: "40px 0 0 0",
+      }}
+    >
       <H3>
         Enjoy our <span>Menu</span>
         <svg

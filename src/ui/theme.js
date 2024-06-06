@@ -6,8 +6,9 @@ const theme = {
       return this.textPrimary;
     },
     textH2: "rgb(243, 236, 217)",
-    textMenuDescription: "rgb(175, 175, 175)",
-    primary: "rgb(235 127 69)",
+    textMenuDescription: "rgb(145, 145, 145)",
+    primary: "rgb(235, 127, 69)",
+    speical: "rgb(0, 180, 0)",
   },
 
   fonts: {
@@ -17,7 +18,7 @@ const theme = {
   },
   fontsize: {
     h1: "24px",
-    h2: "42px",
+    h2: "38px",
     h1Footer: "42px",
     menuDescription: "12px",
   },

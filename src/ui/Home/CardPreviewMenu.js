@@ -1,3 +1,5 @@
+"use client";
+
 import styled from "styled-components";
 import CardMenuItem from "../CardMenuItem";
 import PrimaryButton from "../PrimaryButton";
@@ -14,31 +16,34 @@ const Ul = styled.ul`
   margin: 0 0 40px 0;
 `;
 
-export default function CardPreviewMenu() {
+export default function CardPreviewMenu({ docs }) {
   return (
     <Div>
       <H3>
         Explore our <span>exclusive</span> dishes
       </H3>
       <Ul>
-        <CardMenuItem
-          src={dish3}
-          name="Spicy Currey"
-          description="noodles with chilli"
-          price={20}
-        />
-        <CardMenuItem
-          src={dish3}
-          name="Spicy Currey"
-          description="noodles with chilli"
-          price={20}
-        />
-        <CardMenuItem
-          src={dish3}
-          name="Spicy Currey"
-          description="noodles with chilli"
-          price={20}
-        />
+        {docs.map(
+          ({
+            id,
+            name,
+            description,
+            price,
+            pictureurl,
+            exclusive,
+            special,
+          }) => (
+            <CardMenuItem
+              key={id}
+              src={pictureurl}
+              name={name}
+              description={description}
+              price={price}
+              exclusive={exclusive}
+              special={special}
+            />
+          )
+        )}
       </Ul>
       <PrimaryButton path={"/menu"}>Explore more</PrimaryButton>
     </Div>

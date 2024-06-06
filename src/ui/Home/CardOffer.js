@@ -1,3 +1,5 @@
+"use client";
+
 import Image from "next/image";
 import styled from "styled-components";
 import theme from "../theme";
@@ -10,6 +12,8 @@ const Div = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+  margin: 40px 0 0 0;
+  z-index: 3;
 
   .subdiv {
     width: 50%;

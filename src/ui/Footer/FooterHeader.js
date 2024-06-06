@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import H1 from "../H1";
+import H1Footer from "../H1Footer";
 
 const Div = styled.div`
   display: flex;
@@ -16,7 +16,7 @@ const Div = styled.div`
 export default function FooterHeader() {
   return (
     <Div>
-      <H1 isFooter={true} />
+      <H1Footer />
       <p>Our restaurant is ....</p>
     </Div>
   );
