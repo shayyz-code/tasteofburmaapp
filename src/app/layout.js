@@ -45,7 +45,7 @@ export const metadata = {
   openGraph: {
     title: "Taste of Burma",
     description: "San Fran's Burmese Restaurant",
-    url: "https://tasteofburma.org",
+    url: "https://tasteofburmaapp.vercel.app",
     siteName: "Taste of Burma",
     images: [
       {
