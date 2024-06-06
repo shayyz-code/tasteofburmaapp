@@ -4,7 +4,6 @@ import styled from "styled-components";
 import CardMenuItem from "../CardMenuItem";
 import PrimaryButton from "../PrimaryButton";
 import H3 from "../H3";
-import dish3 from "$/dish3.jpeg";
 
 const Div = styled.div`
   display: flex;
