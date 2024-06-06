@@ -10,6 +10,9 @@ import bgLightmode from "$/bg-lightmode.jpeg";
 export const metadata = {
   title: { template: "%s | Taste of Burma", default: "Taste of Burma" },
   description: "San Fran's Burmese Restaurent",
+  icons: {
+    icon: "/icon.png",
+  },
   generator: "Next.js",
   applicationName: "Taste of Burma",
   referrer: "origin-when-cross-origin",
@@ -28,13 +31,6 @@ export const metadata = {
     description: "San Fran's Burmese Restaurent",
     url: "https://tasteofburma.org",
     siteName: "Taste of Burma",
-    images: [
-      {
-        url: "https://firebasestorage.googleapis.com/v0/b/tasteofburma-4e93e.appspot.com/o/menupictures%2Ffriedshrimp.jpeg?alt=media&token=57a6e485-777a-4076-a12c-c410e7d7bc01",
-        width: 600,
-        height: 800,
-      },
-    ],
     locale: "en_US",
     type: "website",
   },

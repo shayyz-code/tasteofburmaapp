@@ -18,7 +18,7 @@ const theme = {
   },
   fontsize: {
     h1: "24px",
-    h2: "38px",
+    h2: "36px",
     h1Footer: "42px",
     menuDescription: "12px",
   },

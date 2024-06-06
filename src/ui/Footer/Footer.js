@@ -23,6 +23,7 @@ export default function Footer() {
       <FooterListsContainer>
         <FooterList isLink />
         <FooterList list={["Contact", "+12748203981", "California"]} />
+        <FooterList list={["Open Hours", "9:00 - 18:00"]} />
       </FooterListsContainer>
       <Copyright />
     </StyledFooter>

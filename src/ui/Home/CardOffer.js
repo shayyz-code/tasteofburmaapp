@@ -57,9 +57,8 @@ export default function CardOffer({ pictureLeft, spanText }) {
       {spanText && <span>{spanText}</span>}
       <H2>Pure exotic taste</H2>
       <p>
-        Aute occaecat do irure ea pariatur quis amet esse. Ipsum pariatur tempor
-        ea esse nostrud magna consequat dolor commodo voluptate exercitation
-        sunt tempor cillum.
+        Ipsum pariatur tempor ea esse nostrud magna consequat dolor commodo
+        voluptate exercitation sunt tempor cillum.
       </p>
       <PrimaryButton path={"/menu"}>Explore Menu</PrimaryButton>
     </div>
