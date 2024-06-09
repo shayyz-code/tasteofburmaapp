@@ -42,7 +42,7 @@ export default function Navbar() {
   }, []);
 
   useEffect(() => {
-    if (offset > 100) {
+    if (offset > 50) {
       setIsUpper(false);
     } else {
       setIsUpper(true);

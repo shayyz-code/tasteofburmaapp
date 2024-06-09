@@ -6,7 +6,14 @@ import app from "./firebase";
 const storage = getStorage(app);
 const firestore = getFirestore();
 
-const firebaseNewDish = async (name, price, picture) => {
+const firebaseNewDish = async (
+  name,
+  price,
+  description,
+  picture,
+  exclusive,
+  special
+) => {
   // upload file
   try {
     const pictureRef = ref(storage, "menupictures/");
@@ -24,7 +31,10 @@ const firebaseNewDish = async (name, price, picture) => {
     const docRef = await addDoc(collection(firestore, "menu"), {
       name,
       price,
+      description,
       pictureurl,
+      exclusive: exclusive,
+      special: special,
     });
     console.log("Doc written", docRef.id);
     console.log("Success!");
